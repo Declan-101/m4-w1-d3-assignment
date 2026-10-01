@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+
+// Colors: white, black, rgb(22, 34, 42), rgb(58, 96, 115)
+// Fonts: Bitter, FontAwesome
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter";
+}
+
+$max-width: 80em;
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+.main-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(to right, rgb(58, 96, 115), rgb(22, 34, 42));
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 120px 0;
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
+#vue {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+
+  h2 {
+    margin: 5px 0;
+    font-size: 20px;
+  }
+}
+
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  gap: 30px 20px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.food-item {
+  width: 180px;
+  text-align: center;
+
+  img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  p {
+    margin: 2px 0 5px;
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  button {
+    padding: 3px 5px;
+    font-size: 11px;
+    cursor: pointer;
+  }
+}
